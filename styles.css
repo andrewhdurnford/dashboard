@@ -1,0 +1,308 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
+html, body, html * {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-weight: 700;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template: 100vh / 20vw 80vw;
+}
+
+.sidebar {
+    display: grid;
+    padding-bottom: 40vh;
+    background-color: #1c94d3;
+    padding-left: 1vw;
+}
+
+.sidebaritem, .header {
+    display: grid;
+    font-size: 22px;
+    vertical-align: center;
+    grid-template-columns: 20% 80%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+
+.header {
+    padding-bottom: 3vh;
+    padding-top: 1vh;
+    font-size: 30px;
+}
+
+svg {
+    max-height: 1em;
+    max-width: auto;
+    margin: auto;
+    vertical-align: center;
+    fill: white;
+}
+
+.main {
+    display: grid;
+    grid-template: 15vw 85vw / 80vw;
+}
+
+.topbar {
+    display: grid;
+    grid-template: 50% 50% / 80vw;
+    box-shadow: 0px 15px 10px -15px #111; 
+}
+
+.topbar1 {
+    display: grid;
+    grid-template: 100% / 5% 65% 5% 30%;
+    vertical-align: center;
+    font-size: 22px;
+}
+
+.tbicon, .tbicon1 {
+    display: flex;
+}
+
+
+.tbicon svg, .tbicon1 svg, .user svg {
+    fill: black;
+    max-height: 1em;
+    max-width: auto;
+}
+.tbicon svg {
+    margin-right: 0;
+}
+.user svg {
+    max-height: 2em;
+}
+
+.searchbar {
+    height: 1em;
+    border:2px solid #000000;
+    color: black;
+    width: 96%;
+    margin: auto;
+    border-radius: 100px;
+}
+
+.user {
+    display: grid;
+    width: 100%;
+    color: black;
+    grid-template: 100% / 30% 70%;
+    vertical-align: center;
+    margin: auto;
+    align-items: center;
+}
+
+.topbar2 {
+    display: grid;
+    grid-template: 100% / 15% 43% 42%;
+}
+
+.user2 {
+    display: flex;
+}
+
+.user2 svg {
+    fill: black;
+    max-height: 6em;
+    max-width: auto;
+    margin-right: 1em;
+}
+
+.message {
+    display: grid;
+    grid-template: 45% 55% / 100%;
+}
+
+.msg1 {
+    color: black;
+    margin: auto auto 2px 0;
+}
+
+.msg2 {
+    color: black;
+    font-size: 26px;
+    margin: 2px auto auto 0;
+}
+
+.buttons {
+    display: grid;
+    grid-template: 100% / auto auto auto;
+
+}
+
+.buttons div {
+    display: flex;
+    background-color: #1c94d3;
+    width: 80%;
+    height: 2.5em;
+    margin: auto;
+    border-radius: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.maincontent {
+    display: grid;
+    grid-template: 100% / 70% 30%;
+}
+
+.projects {
+    display: grid;
+    grid-template: 5% 50% / auto;
+}
+
+.phead, .stitle {
+    display: flex; 
+    margin-left: 1rem;   
+    color: black;
+    align-items: last baseline;
+    font-size: 22px;
+}
+.pmain {
+    display: grid;
+    grid-template: 33% 33% 33% / 50% 50%;
+}
+
+.project {
+    box-sizing: border-box;
+    margin: 1rem;
+    border-radius: 10px;
+    background: rgb(255,0,0);
+  background: linear-gradient(90deg, 
+  #e2af31 1.7%,  white 1.7%, white 100%);
+    box-shadow: 3px 3px 3px 0px #D3D3D3;
+    display: grid;
+    grid-template: 33% 33% 34% / auto; 
+}
+
+.ptitle {
+    display: flex;
+    margin-left: 2rem;
+    color: black;
+    align-items: last baseline;
+    margin-bottom: 1rem;
+    font-size: 18px;
+}
+
+.pdesc {
+   width: 70%;
+    display: flex;
+    margin-left: 2rem;
+    color: #646262;
+    align-items: first baseline;
+    margin-bottom: 1rem;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.pbuttons {
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: right;
+}
+
+.pbuttons svg {
+    max-height: 1.5rem;
+    max-width: 1.5rem;
+    margin: 0;
+    margin-right: 2rem;
+    fill: black;
+}
+
+.sider {
+    display: grid;
+    grid-template: 5.5% 27% 2.5% 21% / auto;
+}
+
+.section1, .section2 {
+    margin: 2rem;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 0px #D3D3D3;
+}
+
+.section1 {
+    display: grid;
+    grid-template: auto auto auto / auto;
+}
+
+.section1 .subsection {
+    display: grid;
+    grid-template: 35% 65% / auto;
+}
+
+.subtitle {
+    display: flex;
+    align-items: last baseline;
+    font-size: 14px;
+    color: black;
+    font-weight: 500;
+}
+
+.subcontent {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #646262;
+    font-weight: 400;
+    width: 80%;
+}
+
+.section2 {
+    display: grid;
+    grid-template: auto auto auto auto / auto;
+    align-items: center;
+    
+}
+
+.subsection {
+    display: grid;
+    grid-template: 100% / 35% 65%;
+}
+
+ .subsection svg {
+    fill:black;
+    max-width: 3em;
+    max-height: 3em;
+    margin-left: 2em;
+}
+
+.profile {
+    display: grid;
+    grid-template: 50% 50% / auto;
+    align-items: center;
+}
+
+.profile .name {
+    flex: auto;
+    color: black;
+    font-size: 12px;
+    font-weight: 400;
+}
+.profile .info {
+    color: #646262;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 0px;
+}
+
+
+/*
+.subsection p {
+    font-size: 14px;
+    margin: 0;
+    color: black;
+    display: inline
+}
+
+*/
